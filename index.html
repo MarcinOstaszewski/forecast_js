@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <main>
+        <form id="location-form">
+            <fieldset>
+                <legend>Input city name </legend>
+                <p>
+                    <input type="text" name="city" id="city">
+                    <label for="city">City</label>
+                </p>
+                <input type="submit" id="check-weather">Check weather</input>
+            </fieldset>
+        </form>
+    </main>
+
+    <section id="weather-now">
+        <div class="row">
+            <div id="name"></div>
+            <div id="coords"></div>
+        </div>
+        <div class="row">
+            <div class="column" id="details">
+                <div id="description"></div>
+                <div id="pressure"></div>
+                <div id="humidity"></div>
+                <div id="windspeed"></div>
+                <div id="winddeg"></div>
+            </div>
+            <div class="row">
+                <div ><img id="icon" src="" alt="weather icon"/></div>
+                <div id="temp"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather-forecast">
+        <span class="txt-big">Forecast:</span>
+        <div class="row">
+            
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

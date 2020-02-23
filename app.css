@@ -1,0 +1,100 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+main.main {
+    text-align: center;
+}
+
+form#location-form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+form#location-form>fieldset {
+    padding-left: 150px;
+}
+
+section#weather-now,
+section#weather-forecast {
+    display: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #666;
+    width: 560px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+section#weather-now div,
+section#weather-forecast div {
+    display: inline-block;
+}
+
+section#weather-forecast>span.txt-big {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section#weather-forecast div.nineth {
+    text-align: center;
+    border-right: 1px solid #ccc;
+    width: calc(100% / 9);
+    font-size: 14px;
+}
+
+section#weather-now .row,
+section#weather-forecast .row {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+}
+
+section#weather-now .column,
+section#weather-forecast .column {
+    display: flex;
+    flex-direction: column;
+}
+
+section#weather-now #details {
+    width: 300px;
+}
+
+section#weather-now #name {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    width: 300px;
+}
+section#weather-now #country {
+    font-size: 15px;
+    line-height: 25px;
+}
+section#weather-now img#icon {
+    width: 100px;
+    margin-right: 10px;
+}
+
+section#weather-now #coords {
+    line-height: 35px;
+    font-style: italic;
+}
+
+section#weather-now #coords #details {
+    width: 200px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.img-sm {
+    width: 50px;
+}
