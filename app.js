@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const url = 'http://api.openweathermap.org/data/2.5/'
+    const url = 'https://api.openweathermap.org/data/2.5/'
     const apiID = 'fd8de74bb30e63fa5bdd052cabd79493'
-    const iconUrl = 'http://openweathermap.org/img/w/'
+    const iconUrl = 'https://openweathermap.org/img/w/'
     const cityInput = document.querySelector('#city')
     const checkWeatherButton = document.querySelector('#check-weather')
     const icon = document.querySelector('#icon')
